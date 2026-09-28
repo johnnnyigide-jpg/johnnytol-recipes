@@ -176,16 +176,158 @@
         width: 200px;
     }
     span {
-        margin: 20px 30px;
-        padding: 10px 20px;
+        margin: 20px;
+        padding: 20px;
         width: 80px;
-        height: 150px;
+        height: 50px;
         background-color: lightblue;
-        border: solid blue;
+        border: 2px solid blue;
         border-width: 7px 1px;
-
-    }
+        display: block;
+        box-sizing: content-box;
+        }
    </style>
+
+   <!-- Block boxes-->
+    <p>I am a paragraph. A short one.</p>
+    <ul>
+        <li>Item one</li>
+        <li>Item two</li>
+        <li>Item three</li>
+    </ul>
+    <p>
+        I am another paragraph. Some of the <span>
+            class="block">Words</span> have been
+            wrapped in a <span>span element</span>.
+    </p>
+<!--Adding styles css-->
+       <style>
+        body{
+            font-family: sans-serif;
+        }
+        p, ul {
+        border: 2px solid rebeccapurple;
+        padding: 0.2em;   
+        }
+        .block, li {
+            border: 2px solid blue;
+            padding: 0.2em;
+        }
+        ul {
+            display: flex;
+            list-style: none;
+        }
+        .block {
+            display: block;
+        }
+       </style>
+
+
+
+<nav>
+<ul class="links-lists">
+    <li><a href="">link one</a></li>
+    <li><a href="">Link two</a></li>
+    <li><a href="">Link three</a></li>
+    </ul>
+    </nav>
+<!--Adding css styles-->
+<style>
+    Ul {
+        font-family: sans-serif;
+        display: flex;
+        list-style: none;
+        border: 1px solid black;
+    }
+    li {
+        margin: 5px;
+    }
+    .links-lists a {
+        background-color: rgb(179 57 81);
+        color: white;
+        text-decoration: none;
+        padding: 1em 2em;
+    }
+    .links-lists a:hover {
+        background-color: rgb(66 28 40);
+        color: white;
+    }
+</style>
+
+
+<!--Practicing <Div>tag-->
+    <div class="introduction">
+        <h2> Introduction</h2>
+    </div>
+
+    <div class="main-content">
+        <h2>Main content</h2>
+    </div>
+
+    <div class="contact-us">
+        <h2> Contact Us</h2>
+    </div>
+<body>
+    <h1> Basic document flow </h1>
+
+    <p>
+        I am a basic block level element. My adjacent
+        block level elements sit on new 
+        lines below me.
+    </p>
+
+    <p>
+        By default we span 100% of the width of our parent
+        element, and we are as tall
+        as our child content. Our total width and height is 
+        our content + padding +
+        border width/height.
+    </p>
+
+    <P>
+        We are seperated by our margins. Because of margin collasping,
+        we are  seperated 
+        by the size of one of our margins, not both.
+    </P>
+
+    <p>
+        Inline element <span>like this one</span> and <span>this one</span>
+        sit on 
+        the same line along with adjacent text nodes, if there is space on the same
+        line. Overflowing inline element will <span>wrap onto a new line if possible (like this one 
+        containing text) </span>,
+        or just go onto a new line if not, much like this image will do:
+        <img src="https://mdn.github.io/shared-assets/images/examples/long.jpg"
+         alt="snippet of cloth" />
+        
+    </p>
+    </body>
+    <!--Adding css style-->
+    <style>
+        body {
+            width: 500px;
+            margin: 0 auto;
+        }
+        p {
+            background: rgb(255 84 104 / 30%);
+            border: 2px solid rgb(255 84 104);
+            padding: 10px;
+            margin: 10px;
+            margin-right: 20px;
+            margin-left: 20px;
+            display: inline-block;
+        }
+        span{
+            background: white;
+            border: 1px solid black;
+            display:inline-block;
+        }
+    </style>
+
+<P>
+    <a href="new.html">New Page</a>
+    </P>
+    
 
     
 
